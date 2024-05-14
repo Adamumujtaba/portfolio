@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { LiaLinkedin } from 'react-icons/lia';
 import { GrGithub } from 'react-icons/gr';
 import { BsTwitterX } from 'react-icons/bs';
+
 import {
   Button,
   DesktopList,
@@ -79,7 +80,13 @@ function App() {
               <DesktopListItem>
                 <a>Contact</a>
               </DesktopListItem>
-              <Button>Resume</Button>
+              <Button
+                onClick={() => {
+                  window.location.href = '../../public/Mujtaba_CV.pdf';
+                }}
+              >
+                Resume
+              </Button>
             </DesktopList>
           </motion.div>
 
@@ -174,7 +181,13 @@ function App() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.3, duration: 0.5, x: 0 }}
           >
-            <Button style={{ marginTop: '30px', padding: '15px 20px' }}>
+            <Button
+              onClick={() => {
+                window.location.href = 'mailto:mujtabadamu@gmail.com';
+                // window.location.href = 'mailto:someone@example.com';
+              }}
+              style={{ marginTop: '30px', padding: '15px 20px' }}
+            >
               Talk to me
             </Button>
           </motion.div>
