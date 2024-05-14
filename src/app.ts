@@ -28,6 +28,7 @@ export const Section = styled.div`
   @media screen and (max-width: 760px) {
     padding: 0px;
     margin: 5rem auto;
+    width: 95%;
   }
 `;
 
@@ -181,6 +182,9 @@ export const Text = styled.div`
 export const Cont = styled.div`
   width: 80%;
   margin: auto;
+  @media screen and (max-width: 768px) {
+    width: 95%;
+  }
 `;
 export const HeaderAbout = styled.h1`
   font-family: var(--font-mono);
