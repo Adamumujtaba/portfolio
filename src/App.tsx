@@ -123,6 +123,7 @@ function App() {
           // minHeight: '90vh',
           width: '100%',
           margin: '0 auto',
+          overflowX: 'hidden',
           filter: showMenu ? 'blur(5px) brightness(0.7)' : '',
         }}
       >
