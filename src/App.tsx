@@ -181,15 +181,14 @@ function App() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.3, duration: 0.5, x: 0 }}
           >
-            <Button
-              onClick={() => {
-                window.location.href = 'mailto:mujtabadamu@gmail.com';
-                // window.location.href = 'mailto:someone@example.com';
-              }}
-              style={{ marginTop: '30px', padding: '15px 20px' }}
+            <a
+              href='mailto:mujtabadamu@gmail.com'
+              style={{ color: '#fff', textDecoration: 'none' }}
             >
-              Talk to me
-            </Button>
+              <Button style={{ marginTop: '30px', padding: '15px 20px' }}>
+                Talk to me
+              </Button>
+            </a>
           </motion.div>
         </Section>
 
