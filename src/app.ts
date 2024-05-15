@@ -217,7 +217,7 @@ export const About = styled.div`
     width: 90%;
     .wrapper {
       div {
-        width: 90%;
+        width: 100%;
       }
     }
   }

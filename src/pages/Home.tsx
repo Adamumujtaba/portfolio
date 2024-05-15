@@ -237,7 +237,7 @@ function Home() {
             <HeaderAbout>About</HeaderAbout>
             <div className='wrapper'>
               <div>
-                <Text>
+                <Text style={{ width: '100%' }}>
                   I am a full-stack web developer with a passion for creating
                   exceptional user experiences. I have a keen interest in web
                   development, with a strong focus on creating visually
