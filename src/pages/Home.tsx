@@ -223,7 +223,6 @@ const Container = styled.div`
   background-size: contain;
 
   .info {
-    /* background: red; */
     width: 70%;
   }
   @media screen and (max-width: 760px) {
@@ -231,7 +230,6 @@ const Container = styled.div`
     margin: 5rem auto;
     width: 95%;
     .info {
-      /* background: red; */
       width: 100%;
     }
   }

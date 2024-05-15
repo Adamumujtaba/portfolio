@@ -221,6 +221,7 @@ export const Cont = styled.div`
     .wrapper {
       justify-content: center;
       /* background: red; */
+      margin: 8rem 0px;
     }
     .wrapper div {
       width: 100%;
