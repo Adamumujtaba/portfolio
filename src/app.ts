@@ -215,6 +215,11 @@ export const About = styled.div`
 
   @media screen and (max-width: 768px) {
     width: 90%;
+    .wrapper {
+      div {
+        width: 90%;
+      }
+    }
   }
 `;
 export const HeaderAbout = styled.h1`
