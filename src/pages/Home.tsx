@@ -13,6 +13,7 @@ import {
   Text,
 } from '../app';
 import UserImage from '../images/mujtaba.jpg';
+import Image from '../images/image.jpg';
 import { LiaLinkedin } from 'react-icons/lia';
 import { GrGithub } from 'react-icons/gr';
 import { BsTwitterX } from 'react-icons/bs';
@@ -168,7 +169,7 @@ function Home() {
             transition={{ delay: 0.95, duration: 0.5, x: 0 }}
           >
             <div className='imageWrapper'>
-              <img src={UserImage} width={'100%'} alt='user_image' />
+              <img src={Image} width={'100%'} alt='user_image' />
             </div>
           </motion.div>
         </div>
