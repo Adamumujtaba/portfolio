@@ -11,7 +11,6 @@ import {
   DesktopList,
   DesktopListItem,
   HeaderAbout,
-  Cont,
   HeaderTitle,
   LeftEmail,
   Logo,
@@ -93,9 +92,9 @@ function Home() {
 
           <MenuBar className='md:hidden'>
             {showMenu ? (
-              <CgClose color='#fff' size={24} onClick={handleShowMenu} />
+              <CgClose color='#3699f0' size={24} onClick={handleShowMenu} />
             ) : (
-              <FaBars color='#fff' size={24} onClick={handleShowMenu} />
+              <FaBars color='#3699f0' size={24} onClick={handleShowMenu} />
             )}
           </MenuBar>
 
@@ -113,6 +112,13 @@ function Home() {
             <li>
               <a className='text-blue-50'>Contact</a>
             </li>
+            <Button
+              onClick={() => {
+                window.location.href = '../../public/Mujtaba_CV.pdf';
+              }}
+            >
+              Resume
+            </Button>
           </MobileList>
         </div>
       </Nav>
