@@ -24,7 +24,7 @@ export const Section = styled.div`
   transition: var(--transition);
   background-position: center right;
   background-size: contain;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   /* background: red; */
   @media screen and (max-width: 760px) {
     padding: 0px;
@@ -191,44 +191,30 @@ export const Text = styled.div`
   color: #d0d0d0d0;
 `;
 
-export const Cont = styled.div`
+export const About = styled.div`
   width: 80%;
   margin: auto;
 
   .wrapper {
     display: flex;
+    /* align-items: center; */
     flex-wrap: wrap;
-    align-items: center;
+    gap: 20px;
     justify-content: space-between;
     div {
-      max-width: 400px;
-      /* max-width: 400px; */
-      /* background: red; */
+      width: 500px;
+    }
+    .imageWrapper {
+      width: 300px;
+      img {
+        box-shadow: 5px 10px #888888;
+        filter: grayscale(100%) contrast(1);
+      }
     }
   }
-  .imageWrapper {
-    width: 300px;
-    height: 340px;
-    /* box-shadow: 0 10px 30px -15px #d0d0d0d0; */
-    box-shadow: 5px 10px #888888;
-    img {
-      height: 100%;
-      filter: grayscale(100%) contrast(1);
-    }
-  }
+
   @media screen and (max-width: 768px) {
-    width: 100%;
-    .wrapper {
-      justify-content: center;
-      /* background: red; */
-      margin: 8rem 0px;
-    }
-    .wrapper div {
-      width: 100%;
-    }
-    div {
-      width: 100%;
-    }
+    width: 90%;
   }
 `;
 export const HeaderAbout = styled.h1`

@@ -5,7 +5,6 @@ import styled from 'styled-components';
 function AppLayout() {
   return (
     <Wrapper>
-      <Navbar />
       <Outlet />
       {/* <Footer /> */}
     </Wrapper>
