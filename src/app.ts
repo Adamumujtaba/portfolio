@@ -26,6 +26,7 @@ export const Section = styled.div`
   background-size: contain;
   /* background-attachment: fixed; */
   /* background: red; */
+
   @media screen and (max-width: 760px) {
     padding: 0px;
     margin: 5rem auto;

@@ -166,12 +166,20 @@ function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.5, x: 0 }}
             >
-              <Text>
+              <Text
+                style={{
+                  margin: '20px 0px',
+                  fontWeight: 700,
+                  fontSize: '20px',
+                  lineHeight: '30px',
+                }}
+                className='txt'
+              >
                 My area of expertise is using React and React Native to optimise
                 front-end-to-backend communication while creating user
                 interfaces.
               </Text>
-              <Text>
+              <Text className='txt'>
                 I possess a strong passion for web development, with a keen
                 focus on creating exceptional web experiences. Ever since my
                 early days of working with computers, coding has ignited my
