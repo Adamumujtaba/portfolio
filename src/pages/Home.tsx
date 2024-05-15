@@ -82,7 +82,7 @@ function Home() {
               </DesktopListItem>
               <Button
                 onClick={() => {
-                  window.location.href = '../../public/Mujtaba_CV.pdf';
+                  window.location.href = './images/resume.pdf';
                 }}
               >
                 Resume
