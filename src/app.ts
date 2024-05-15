@@ -25,6 +25,7 @@ export const Section = styled.div`
   background-position: center right;
   background-size: contain;
   background-attachment: fixed;
+  /* background: red; */
   @media screen and (max-width: 760px) {
     padding: 0px;
     margin: 5rem auto;
@@ -137,6 +138,16 @@ export const RightMenuIcon = styled(motion.ul)`
   a {
     color: #fff;
     text-decoration: none;
+    display: block;
+    padding: 0.5px;
+    width: 25px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  a:hover {
+    transform: scale(1.2);
+    transition: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    color: #3699f0;
   }
   @media screen and (max-width: 768px) {
     display: none;
@@ -157,6 +168,7 @@ export const LeftEmail = styled(motion.a)`
   }
   a {
     font-family: var(--font-mono);
+    color: #d0d0d0d0;
   }
   &::after {
     content: '';
@@ -182,8 +194,40 @@ export const Text = styled.div`
 export const Cont = styled.div`
   width: 80%;
   margin: auto;
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    div {
+      max-width: 400px;
+      /* max-width: 400px; */
+      /* background: red; */
+    }
+  }
+  .imageWrapper {
+    width: 300px;
+    height: 340px;
+    /* box-shadow: 0 10px 30px -15px #d0d0d0d0; */
+    box-shadow: 5px 10px #888888;
+    img {
+      height: 100%;
+      filter: grayscale(100%) contrast(1);
+    }
+  }
   @media screen and (max-width: 768px) {
-    width: 95%;
+    width: 100%;
+    .wrapper {
+      justify-content: center;
+      /* background: red; */
+    }
+    .wrapper div {
+      width: 100%;
+    }
+    div {
+      width: 100%;
+    }
   }
 `;
 export const HeaderAbout = styled.h1`
@@ -214,7 +258,7 @@ export const SkilledList = styled.ul`
   color: #d0d0d0d0;
   li::before {
     content: '▹';
-    color: #d0d0d0d0;
+    color: #3699f0;
     margin: 10px;
     line-height: 25px;
   }
@@ -237,9 +281,6 @@ export const Footer = styled.footer`
     a {
       color: #d0d0d0d0;
     }
-  }
-  .txt {
-    display: none;
   }
 
   @media screen and (min-width: 768px) {
