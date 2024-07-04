@@ -8,6 +8,7 @@ import { LeftEmail, RightMenuIcon, Footer } from '../app';
 import Navbar from '../Components/Nav';
 import HeroSection from '../Components/HeroSection';
 import AboutMe from '../Components/AboutMe';
+import Projects from '../Components/Projects';
 
 function Home() {
   const [showMenu, setShowMenu] = useState(false);
@@ -63,6 +64,10 @@ function Home() {
         <LeftEmail>
           <motion.a>mujtaba@gmail.com</motion.a>
         </LeftEmail>
+
+        <>
+          <Projects />
+        </>
 
         <>
           <AboutMe />
